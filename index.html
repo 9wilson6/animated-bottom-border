@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Daily Tuition</title>
+    <style>
+      .text-center {
+        text-align: center;
+        margin-top: 2%;
+      }
+      .hover-border {
+        font-family: "Segeo UI" Tahoma;
+        font-size: 80px;
+        text-decoration: none;
+        position: relative;
+        color: black;
+      }
+      .hover-border::after {
+        content: "";
+        width: 0%;
+        height: 7px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        border-radius: 10px;
+        transition: all 0.5s ease-in;
+        background: red;
+      }
+      .hover-border:hover::after {
+        left: 0%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-center">
+      <a href="#" class="hover-border">Hover</a>
+    </div>
+  </body>
+</html>
